@@ -1,1 +1,1 @@
-# science-lab
+# chemistry-lab
