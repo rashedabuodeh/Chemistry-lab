@@ -4,38 +4,49 @@ using UnityEngine;
 
 public class FillLiquid : MonoBehaviour
 {
-    [SerializeField] private Material water, Lugol, Starch;
+    public enum TypeOfLiquid
+    {
+        Water, Lugol, Starch
+    }
+    public TypeOfLiquid typeOfLiquid; // to use for each dropper one liquid
+
+    [SerializeField] private Material _water, _lugol, _starch;
+    private Material basicMaterial; // whne there is no liquid in the dropper
     private MeshRenderer meshRenderer;
     private const string waterTag = "Water";
     private const string starchTag = "Starch";
     private const string lugolTag = "Lugol";
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         meshRenderer = GetComponent<MeshRenderer>();
+        basicMaterial = meshRenderer.material;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("collider");
+        //Debug.Log("collider");
         switch (other.tag)
         {
             case waterTag:
-                meshRenderer.material = water;
+                if (typeOfLiquid == TypeOfLiquid.Water)
+                    meshRenderer.material = _water;
+                else
+                    Debug.Log("miss use");
                     break;
             case starchTag:
-                meshRenderer.material = Starch;
-                    break;
+                if (typeOfLiquid == TypeOfLiquid.Starch)
+                    meshRenderer.material = _starch;
+                else
+                    Debug.Log("miss use"); break;
             case lugolTag:
-                meshRenderer.material = Lugol;
-                    break;
+                if (typeOfLiquid == TypeOfLiquid.Lugol)
+                    meshRenderer.material = _lugol;
+                else
+                    Debug.Log("miss use"); break;
             default:
+                    Debug.Log("entered the wrong collider"); break;
                 break;
         }
     }
