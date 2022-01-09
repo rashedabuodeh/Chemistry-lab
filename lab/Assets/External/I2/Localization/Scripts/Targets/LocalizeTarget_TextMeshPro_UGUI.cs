@@ -4,9 +4,9 @@ using UnityEngine;
 #if TextMeshPro
 namespace I2.Loc
 {
-    #if UNITY_EDITOR
-    [UnityEditor.InitializeOnLoad] 
-    #endif
+#if UNITY_EDITOR
+    [UnityEditor.InitializeOnLoad]
+#endif
 
     public class LocalizeTarget_TextMeshPro_UGUI : LocalizeTarget<TMPro.TextMeshProUGUI>
     {
@@ -24,7 +24,7 @@ namespace I2.Loc
         public override bool AllowMainTermToBeRTL() { return true; }
         public override bool AllowSecondTermToBeRTL() { return false; }
 
-        public override void GetFinalTerms ( Localize cmp, string Main, string Secondary, out string primaryTerm, out string secondaryTerm)
+        public override void GetFinalTerms(Localize cmp, string Main, string Secondary, out string primaryTerm, out string secondaryTerm)
         {
             primaryTerm = mTarget ? mTarget.text : null;
             secondaryTerm = (mTarget.font != null ? mTarget.font.name : string.Empty);
@@ -54,7 +54,7 @@ namespace I2.Loc
                             if (newFont != null)
                                 LocalizeTarget_TextMeshPro_Label.SetFont(mTarget, newFont);
                         }
-                        LocalizeTarget_TextMeshPro_Label.SetMaterial( mTarget, newMat );
+                        LocalizeTarget_TextMeshPro_Label.SetMaterial(mTarget, newMat);
                     }
                 }
             }

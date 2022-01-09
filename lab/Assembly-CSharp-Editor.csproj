@@ -53,35 +53,35 @@
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\PostProcessBuild_UnloadLanguages.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\LocalizeInspector.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\EditorTools.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\LanguageSourceInspector.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_Script.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\LocalizationEditor.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\UpgradeManager.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\SetLanguageInspector.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Spreadsheet_Google.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Languages.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Terms.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\TermsPopup_Drawer.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_Scenes.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\PostProcessBuild_IOS.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\LocalizationParamsManagerInspector.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\ResourceManagerInspector.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Warnings.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Terms_Description.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_Scenes.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\PostProcessBuild_ANDROID.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_NoLocalized.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_ParseTerms.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Spreadsheet_Local.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_Categorize.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\LanguageSourceAssetInspector.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\LocalizationEditor.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_NoLocalized.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\EditorTools.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\PostProcessBuild_ANDROID.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\UpgradeManager.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_CharSet.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_ParseTerms.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\LocalizeDropdownInspector.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\PostProcessBuild_UnloadLanguages.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\PostProcessBuild_IOS.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Spreadsheet_Local.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\LocalizationParamsManagerInspector.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\SetLanguageInspector.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Terms.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Languages.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\TermsPopup_Drawer.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\ResourceManagerInspector.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\LocalizeInspector.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Inspectors\LanguageSourceInspector.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_MergeTerms.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_Script.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\External\I2\Localization\Scripts\Editor\Unity XCode\UnityEditor.iOS_I2Loc.Xcode.dll" />
@@ -313,6 +313,12 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
@@ -321,6 +327,9 @@
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.13.5\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS_I2Loc.Xcode">
+      <HintPath>Assets\External\I2\Localization\Scripts\Editor\Unity XCode\UnityEditor.iOS_I2Loc.Xcode.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.13.5\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
@@ -334,11 +343,14 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS_I2Loc.Xcode">
-      <HintPath>Assets\I2\Localization\Scripts\Editor\Unity XCode\UnityEditor.iOS_I2Loc.Xcode.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
@@ -715,20 +727,28 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{35A81F1E-5B2D-664B-C8B1-70BC8E9A30BC}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="RTLTMPro-Editor.csproj">
+      <Project>{CB11B13A-E3DC-8731-6611-86616A1DD15A}</Project>
+      <Name>RTLTMPro-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="RTLTMPro.csproj">
+      <Project>{C88B942A-8AA8-753F-2C96-CE2A6F351ED1}</Project>
+      <Name>RTLTMPro</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

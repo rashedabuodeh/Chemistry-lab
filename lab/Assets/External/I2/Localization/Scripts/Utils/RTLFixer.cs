@@ -50,7 +50,7 @@ namespace I2.Loc
             }
         }
 
-         /// <summary>
+        /// <summary>
         /// Fix the specified string with customization options.
         /// </summary>
         /// <param name='str'>

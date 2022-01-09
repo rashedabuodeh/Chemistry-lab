@@ -66,7 +66,7 @@
     <Compile Include="Assets\External\I2\Localization\Scripts\Utils\RTLFixer.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Targets\LocalizeTarget_SVGImporter_Image.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Google\TranslationJob_POST.cs" />
-    <Compile Include="Assets\External\I2\Localization\Examples\Common\Scripts\GlobalParametersExample.cs" />
+    <Compile Include="Assets\External\I2\Localization\Examples\Common\Scripts\GlobalParameters.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\LanguageSource\LanguageSourceData_Import_CSV.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\LanguageData.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\LanguageSource\LanguageSourceData_Export_Google.cs" />
@@ -83,6 +83,7 @@
     <Compile Include="Assets\External\I2\Localization\Scripts\Utils\CoroutineManager.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\EventCallback.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\LanguageSource\LanguageSourceAsset.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\External\I2\Localization\Examples\Common\Scripts\ToggleLanguage.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Utils\SetLanguage.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Manager\LocalizationManager_Translation.cs" />
@@ -106,8 +107,9 @@
     <Compile Include="Assets\External\I2\Localization\Scripts\Localize.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Targets\LocalizeTarget_TextMeshPro_UGUI.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Manager\LocalizationManager.cs" />
-    <Compile Include="Assets\External\I2\Localization\Scripts\Manager\LocalizationManager_Parameters.cs" />
+    <Compile Include="Assets\Scripts\HeatingEffect.cs" />
     <Compile Include="Assets\External\Archanor\Shared\Scripts\loopScript.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Manager\LocalizationManager_Parameters.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Google\SimpleJSON.cs" />
     <Compile Include="Assets\Scripts\Draggable.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Targets\LocalizeTarget_NGUI_Label.cs" />
@@ -142,8 +144,7 @@
     <Compile Include="Assets\External\I2\Localization\Scripts\Targets\LocalizeTarget_UnityStandard_VideoPlayer.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Utils\RegisterCallback_AllowSyncFromGoogle.cs" />
     <Compile Include="Assets\External\I2\Localization\Scripts\Configurables\PersistentStorage.cs" />
-    <Compile Include="Assets\Scripts\UIManager.cs" />
-    <Compile Include="Assets\Scripts\HeatingEffect.cs" />
+    <Compile Include="Assets\External\I2\Localization\Scripts\Targets\LocalizeTarget_RTLTMPRO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -410,6 +411,12 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

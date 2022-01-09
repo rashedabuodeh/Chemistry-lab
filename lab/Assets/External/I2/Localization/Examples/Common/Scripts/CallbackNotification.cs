@@ -1,18 +1,18 @@
-﻿using UnityEngine;
+﻿using RTLTMPro;
+using UnityEngine;
 
 namespace I2.Loc
 {
-
-	public class CallbackNotification : MonoBehaviour 
+	public class CallbackNotification : MonoBehaviour
 	{
+
+		[SerializeField] private RTLTextMeshPro _playersCountText;
+
+		public LocalizedString _MyLocalizedString;                    
+
 		public void OnModifyLocalization()
 		{
-			if (string.IsNullOrEmpty(Localize.MainTranslation))
-				return;
-			
-			string PlayerColor = LocalizationManager.GetTranslation( "Color/Red" );
-			
-			Localize.MainTranslation = Localize.MainTranslation.Replace("{PLAYER_COLOR}", PlayerColor);
+			_playersCountText.text =  _MyLocalizedString;
 		}
 	}
 }

@@ -16,14 +16,76 @@ MonoBehaviour:
     UserAgreesToHaveItOnTheScene: 0
     UserAgreesToHaveItInsideThePluginsFolder: 0
     GoogleLiveSyncIsUptoDate: 1
-    mTerms: []
+    mTerms:
+    - Term: steps
+      TermType: 0
+      Description: 
+      Languages:
+      - "1) put 3 ml of water in tube 1\r\n2) put 3 ml of starch solution in tube
+        2\n3) add Lugol\u2019s solution to both tubes \n4) put the tubes in a hot
+        bath for two minutes\r                    ( press on the timer)\n5) take
+        out the tubes, notice color"
+      Flags: 00
+      Languages_Touch: []
+    - Term: Water
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      Flags: 00
+      Languages_Touch: []
+    - Term: Starch
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      Flags: 00
+      Languages_Touch: []
+    - Term: Lugol
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      Flags: 00
+      Languages_Touch: []
+    - Term: open
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      Flags: 00
+      Languages_Touch: []
+    - Term: Let's start the experiment
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      Flags: 00
+      Languages_Touch: []
+    - Term: Timer
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      Flags: 00
+      Languages_Touch: []
+    - Term: Restart
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      Flags: 00
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 
-    mLanguages: []
+    mLanguages:
+    - Name: English
+      Code: en
+      Flags: 0
     IgnoreDeviceLanguage: 0
     _AllowUnloadingLanguages: 0
-    Google_WebServiceURL: 
+    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbxu_07WkZKml1AZpvTNyyejbfjJGln73zzPfBDBBi9bQC9Q3Bz9zEC3ZkuyvNiwucX0pA/exec
     Google_SpreadsheetKey: 
     Google_SpreadsheetName: 
     Google_LastUpdatedVersion: 

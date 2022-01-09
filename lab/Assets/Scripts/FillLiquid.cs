@@ -18,6 +18,7 @@ public class FillLiquid : MonoBehaviour
     public TypeOfHolder typeOfHolder;
 
     [NonSerialized] public MeshRenderer meshRenderer;
+    private AudioSource audioSource;
 
     [Header("Materials")]
     [SerializeField] private Material _water;
@@ -38,7 +39,7 @@ public class FillLiquid : MonoBehaviour
     {
         meshRenderer = GetComponent<MeshRenderer>();
         basicMaterial = meshRenderer.material;
-        // add listenter when tiimer finish
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -51,8 +52,9 @@ public class FillLiquid : MonoBehaviour
                 {
                     if (typeOfHolder == TypeOfHolder.dropper)
                     {
-                        meshRenderer.material = _water; // should make sound for filling
+                        meshRenderer.material = _water; 
                         isFilled = true;
+                        audioSource.Play();
                     }
                     else
                     {
@@ -60,8 +62,9 @@ public class FillLiquid : MonoBehaviour
                             if (liquid.isFilled)
                             {
                                 liquid.meshRenderer.material = basicMaterial; // take the liquid from the dropper
-                                meshRenderer.material = _water; // should make sound for filling
+                                meshRenderer.material = _water; 
                                 liquid.isFilled = false;
+                                audioSource.Play();
                                 break;
                             }
                     }
@@ -76,8 +79,9 @@ public class FillLiquid : MonoBehaviour
                 {
                     if (typeOfHolder == TypeOfHolder.dropper)
                     {
-                        meshRenderer.material = _starch; // should make sound for filling
+                        meshRenderer.material = _starch; 
                         isFilled = true;
+                        audioSource.Play();
                     }
                     else
                     {
@@ -85,7 +89,8 @@ public class FillLiquid : MonoBehaviour
                             if (liquid.isFilled)
                             {
                                 liquid.meshRenderer.material = basicMaterial; // take the liquid from the dropper
-                                meshRenderer.material = _starch; // should make sound for filling
+                                meshRenderer.material = _starch;
+                                audioSource.Play();
                                 liquid.isFilled = false; 
                             }
                     }
@@ -100,16 +105,18 @@ public class FillLiquid : MonoBehaviour
                 {
                     meshRenderer.material = _lugol;
                     isFilled = true;
+                    audioSource.Play();
                 }
                 else if (typeOfHolder == TypeOfHolder.tube)
-                {
+                {   // when mixing lugol with water or startch solution      
                     if (other.TryGetComponent<FillLiquid>(out FillLiquid liquid))
                         if (liquid.isFilled)
                         {
                             liquid.meshRenderer.material = basicMaterial; // take the liquid from the dropper
-                            meshRenderer.material = _water; // should make sound for filling
+                            meshRenderer.material = _water; 
                             liquid.isFilled = false;
                             _mixedLiquid.SetActive(true);
+                            audioSource.Play();
                         }
                 }
                 //else

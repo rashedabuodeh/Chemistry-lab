@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Object = UnityEngine.Object;
 
-
 namespace I2.Loc
 {
     [AddComponentMenu("I2/Localization/I2 Localize")]
@@ -353,7 +352,7 @@ namespace I2.Loc
 			if (!string.IsNullOrEmpty(primary))
 				FinalTerm = mTerm = primary;
 
-			OnLocalize (true);
+			OnLocalize(true);
 		}
 
 		public void SetTerm(string primary, string secondary )
